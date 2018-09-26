@@ -1,0 +1,49 @@
+DESIGN.txt
+
+Problem:
+    To detect the ASL sign the user signs in front of Kinect and gives out the
+    meaning of the sign.
+
+
+Approach:
+    Each word is stored as a movement of body joints. Each sign is diveded into 4
+    frames, each of which is a frozen gesture of the sign, one following another 
+    in the sequence of how the word should be signed. In side each frame there 
+    are key joint position classes that indicate the vectors pointing from a 
+    relative joint to a key joint.
+
+
+User Interface:
+    Since it's a tool for users to translate ASL. I want it to be as straight-
+    forward as possible. Once the user runs the program, he/she will see the 
+    instructions on the starter page and can move on to using the program directly
+    as he/she wants.
+
+
+Programs I Studied Before I Started:
+
+    1. Sign Sign Revolution - Kimberly Lim
+        This is a 112 term project from last semester. It's a game that teaches
+        people ASL through music videos made by Erik Pintar.
+        o   https://www.youtube.com/watch?v=F7I_h_oFmco&nohtml5=False
+
+            Good: It's a very interesting and challenging idea to use Kinect to 
+                  detect ASL signs. 
+            Bad:  I don't think it's very practical to let users learn ASL by 
+                  watching ASL music videos
+        So I decided to make a dictionary instead of a tutorial program.
+
+    2. Kinect Sign Language Translator by Microsoft
+        This a project conducted by Microsoft that uses Kinect to translate a
+        kind of sign language into another sign or spoken language.
+        o   http://research.microsoft.com/en-us/collaboration/stories/kinect-sign-language-translator.aspx
+
+            Good: Recognizing gestures and returning the words
+                  Increasing vocabulary storage by letting user record and type 
+                  in the word corresponding to the gesture
+            Bad:  Impractical for me to achieve. I won’t translate the input 
+                  sign language into another sign language or spoken language.
+                  I also won’t include the human voice produced by the machine.
+                  My project will be a one-way dictionary only, instead of a 
+                  translator.
+
